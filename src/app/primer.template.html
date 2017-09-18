@@ -1,0 +1,15 @@
+<div id="lista">
+    <h3>Lista de {{db}}</h3>
+    <div>
+        <ul>
+            <li *ngFor="let facu of listaFacu"
+            [ngClass] = "{seleccionada: seleccion==facu}"
+            (click)="seleccionar(facu)">{{facu.nombre}}</li>
+        </ul>
+        <p>La Complu tiene {{listaFacu.length}} facultades.</p>
+    </div>
+</div>
+<div id="descripcion">
+    <des-facu *ngIf="seleccion" [facultad]="seleccion"></des-facu>
+    <button *ngIf="seleccion" (click)="cerrar()">Cerrar</button>
+</div>

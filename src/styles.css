@@ -3,3 +3,17 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
+
+#lista{
+  float: left;
+  margin-right: 50px;
+}
+
+#descripcion{
+  float: left;
+}
+
+.seleccionada{
+  color: #606;
+  font-weight: bold;
+}
